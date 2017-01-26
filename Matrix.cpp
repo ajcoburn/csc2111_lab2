@@ -7,6 +7,7 @@ using namespace std;
 //the indices are 1-based!!
 Matrix::Matrix(int r, int c)
 {
+	//test comment
    rows = r;
    cols = c;
 
