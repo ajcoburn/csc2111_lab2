@@ -8,7 +8,7 @@ using namespace std;
 /*
 	changed "struct" to "class" & added private & public fields
 	modified prototype definitions to include constructor and destructor
-	-Jeromy Coburn
+	-Jeromy Coburn(1/26/17)
 */
 class WriteFile
 {
@@ -17,12 +17,10 @@ class WriteFile
 	   bool closed;
 	   
 	public:
-		WriteFile* createWriteFile(const char* file_name);
-		~WriteFile*(); //destructor
-		void writeLine(WriteFile* wf, String* line);
-		void close(WriteFile* wf);
+		WriteFile(const char* file_name);
+		~WriteFile();
+		void writeLine(String* line);
+		void close();
 };
-
-
 
 #endif
