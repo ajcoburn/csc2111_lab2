@@ -12,12 +12,12 @@ int main()
    while(!rf->eof())
    {
       String* line = rf->readLine();
-      wf->writeLine(line);
+      wf->WriteFile::writeLine(wf, line);
       delete line;
    }
 
    rf->close();
-   wf->close();
+   wf->WriteFile::close(wf);
    delete rf;
    delete wf;
 
